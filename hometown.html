@@ -5,32 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Мой родной населенный пункт</title>
-    <!-- Добавляем ссылку на API Google Карт -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ&callback=initMap" async defer></script>
-    <!-- Создаем скрипт для инициализации карты -->
-    <script>
-        function initMap() {
-            // Координаты Киева
-            var kiev = { lat: 50.4501, lng: 30.5234 };
-
-            // Создаем карту
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: kiev,
-                zoom: 13 // Зум по умолчанию
-            });
-
-            // Создаем маркер на карте
-            var marker = new google.maps.Marker({
-                position: kiev,
-                map: map,
-                title: 'Киев, Украина'
-            });
-        }
-    </script>
+    <title>Моє рідне місце</title>
 </head>
 
-<body>
+<body class="body-bg">
     <header>
         <nav>
             <ul>
@@ -41,14 +19,19 @@
         </nav>
     </header>
     <main>
-        <h1>Мой родной населенный пункт</h1>
-        <p>Здесь вы найдете информацию о моем родном населенном пункте и интерактивную карту Киева:</p>
-        <!-- Добавляем контейнер для карты -->
-        <div id="map" style="height: 400px;"></div>
-        <!-- Дополнительный контент -->
+        <h1>Моє рідне місто</h1>
+        <p>Я народилась та все своє життя живу у <b>Києві</b>. Тут ви можете переглянути <a href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%97%D0%B2">детальну інформацію про Київ</a> та подивитись його карту.</p>
+       
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169840.54418260095!2d30.394460678622117!3d50.43648981772982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1695846931515!5m2!1suk!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
-        <p>&copy; 2023 Ваше имя</p>
+        <p>&copy; 2023 Valeriia Kondratiuk</p>
+        <a href="https://github.com/konvaleriia">
+            My GitHub account!
+        </a>
     </footer>
 </body>
 

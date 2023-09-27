@@ -7,6 +7,10 @@ header {
     justify-content: center;
 }
 
+.body-bg {
+    background-color: rgba(255, 203, 139, 0.364);
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -37,7 +41,7 @@ main {
 
 .text-about {
     margin: 0;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 .imageme {
@@ -53,6 +57,14 @@ main {
     transform: scale(1.2);
 }
 
+.sunriseimg {
+    height: 300px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
 
 footer {
     background-color: #765484fa;
