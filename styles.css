@@ -1,0 +1,62 @@
+header {
+    background-color: #765484fa;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+}
+
+.text-about {
+    margin: 0;
+    padding: 20px;
+}
+
+.imageme {
+    height: 400px;
+    border: 6px solid #765484fa;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.imageme:hover {
+    transform: scale(1.2);
+}
+
+
+footer {
+    background-color: #765484fa;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}

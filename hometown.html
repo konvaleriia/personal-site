@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Мой родной населенный пункт</title>
+    <!-- Добавляем ссылку на API Google Карт -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ&callback=initMap" async defer></script>
+    <!-- Создаем скрипт для инициализации карты -->
+    <script>
+        function initMap() {
+            // Координаты Киева
+            var kiev = { lat: 50.4501, lng: 30.5234 };
+
+            // Создаем карту
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: kiev,
+                zoom: 13 // Зум по умолчанию
+            });
+
+            // Создаем маркер на карте
+            var marker = new google.maps.Marker({
+                position: kiev,
+                map: map,
+                title: 'Киев, Украина'
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Обо мне</a></li>
+                <li><a href="hobbies.html">Хобби и увлечения</a></li>
+                <li><a href="hometown.html">Мой родной населенный пункт</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Мой родной населенный пункт</h1>
+        <p>Здесь вы найдете информацию о моем родном населенном пункте и интерактивную карту Киева:</p>
+        <!-- Добавляем контейнер для карты -->
+        <div id="map" style="height: 400px;"></div>
+        <!-- Дополнительный контент -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Ваше имя</p>
+    </footer>
+</body>
+
+</html>
